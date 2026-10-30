@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Додо Пицца — Улучшенная версия | Березники</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🦤</span>
+        <div>
+          <strong>ДОДО ПИЦЦА</strong>
+          <small>Улучшенная версия • Березники</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#menu">Меню</a>
+        <a href="#improvements">Улучшения</a>
+        <a href="#roles">Иерархия</a>
+        <a href="#team">Команда</a>
+        <a href="#order" class="btn-order">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Пицца, которую <span>реально</span> ждут</h1>
+      <p>Мы взяли классическое меню Додо и усилили его по отзывам с оценкой 3+ балла: больше сыра, чётче размеры, горячая доставка и прозрачная система ролей.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn primary">Смотреть меню</a>
+        <a href="#roles" class="btn secondary">Система ролей</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="improvements" class="improvements">
+    <div class="container">
+      <h2>Что мы улучшили по отзывам</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🔥</div>
+          <h3>Всегда горячая</h3>
+          <p>Жалобы на остывшую пиццу — №1. Теперь термосумки + контроль температуры курьера.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧀</div>
+          <h3>Больше сыра</h3>
+          <p>Многие писали «мало сыра». На всех пиццах увеличена порция моцареллы на 15–20%.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📏</div>
+          <h3>Честные размеры</h3>
+          <p>Чётко указаны 25 / 30 / 35 см и вес. Никаких «кажется маленькой».</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Контроль качества</h3>
+          <p>После жалоб на «сырое тесто» и «дешёвый сыр» — двойная проверка перед выдачей.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Меню (улучшенное)</h2>
+      <p class="section-desc">Цены ориентировочные для Березников. Все пиццы доступны в трёх размерах.</p>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- заполняется JS -->
+      </div>
+    </div>
+  </section>
+
+  <section id="roles" class="roles">
+    <div class="container">
+      <h2>Иерархия ролей сайта</h2>
+      <p class="section-desc">Полная система прав от Владельца до Заблокированного</p>
+
+      <div class="roles-table-wrapper">
+        <table class="roles-table">
+          <thead>
+            <tr>
+              <th>Уровень</th>
+              <th>Роль</th>
+              <th>Права</th>
+              <th>Цвет</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="role-owner"><td>1</td><td><strong>Владелец / Основатель</strong><br><small>Owner</small></td><td>Полный доступ, управляет всем</td><td><span class="badge owner">Owner</span></td></tr>
+            <tr class="role-co"><td>2</td><td><strong>Со-владелец</strong></td><td>Почти то же, но под владельцем</td><td><span class="badge co">Co-Owner</span></td></tr>
+            <tr class="role-gadmin"><td>3</td><td><strong>Гл. администратор</strong></td><td>Управляет командой и настройками</td><td><span class="badge gadmin">Гл. Админ</span></td></tr>
+            <tr class="role-admin"><td>4</td><td><strong>Администратор</strong><br><small>Admin</small></td><td>Баны, удаление контента, управление разделами</td><td><span class="badge admin">Admin</span></td></tr>
+            <tr class="role-smod"><td>5</td><td><strong>Старший модератор</strong></td><td>Следит за модераторами, разбирает жалобы</td><td><span class="badge smod">Ст. Мод</span></td></tr>
+            <tr class="role-mod"><td>6</td><td><strong>Модератор</strong><br><small>Moder</small></td><td>Удаляет спам, мутит, выдаёт предупреждения</td><td><span class="badge mod">Moder</span></td></tr>
+            <tr class="role-jmod"><td>7</td><td><strong>Младший модератор / Стажёр</strong></td><td>Испытательный срок, ограниченные права</td><td><span class="badge jmod">Мл. Мод</span></td></tr>
+            <tr class="role-helper"><td>8</td><td><strong>Хелпер / Саппорт</strong><br><small>Helper</small></td><td>Помогает пользователям, но не банит</td><td><span class="badge helper">Helper</span></td></tr>
+            <tr class="role-dev"><td>9</td><td><strong>Разработчик</strong></td><td>Доступ к коду и технической части</td><td><span class="badge dev">Dev</span></td></tr>
+            <tr class="role-tester"><td>10</td><td><strong>Тестировщик</strong></td><td>Ранний доступ, ищет баги</td><td><span class="badge tester">Tester</span></td></tr>
+            <tr class="role-vip"><td>11</td><td><strong>VIP / Премиум / Спонсор</strong><br><small>VIP</small></td><td>Цветной ник и значок за поддержку сайта</td><td><span class="badge vip">VIP</span></td></tr>
+            <tr class="role-verified"><td>12</td><td><strong>Проверенный</strong></td><td>Подтверждённый участник</td><td><span class="badge verified">Проверен</span></td></tr>
+            <tr class="role-active"><td>13</td><td><strong>Активный участник / Ветеран</strong></td><td>Давно и активно с нами</td><td><span class="badge active">Ветеран</span></td></tr>
+            <tr class="role-user"><td>14</td><td><strong>Пользователь / Новичок</strong><br><small>Player</small></td><td>Обычный участник</td><td><span class="badge user">Player</span></td></tr>
+            <tr class="role-banned"><td>15</td><td><strong>Заблокирован</strong></td><td>Серый ник, доступ закрыт</td><td><span class="badge banned">Banned</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team">
+    <div class="container">
+      <h2>Команда сайта (от Тестировщика до Основателя)</h2>
+      <p class="section-desc">Сгенерированные ники + формат пароля</p>
+
+      <div class="team-grid" id="team-grid">
+        <!-- JS -->
+      </div>
+
+      <div class="password-info">
+        <h3>Формат пароля (как просил)</h3>
+        <p>Пароль хранится <strong>только в ID</strong>. Структура:</p>
+        <code>«фото пиццы» + «название» + «айди» + одна цифра</code>
+        <p>В ID человека обязательно присутствует цифра пароля.</p>
+        <div class="example-box">
+          <strong>Пример:</strong><br>
+          Ник: <code>Founder_DodoKing</code><br>
+          ID: <code>user_foto_pizza_Pepperoni_7_9841</code><br>
+          Пароль (цифра): <code>7</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="order-cta">
+    <div class="container">
+      <h2>Готовы заказать?</h2>
+      <p>Это демо-сайт. В реальной версии здесь будет корзина + интеграция с PHP / Go бэкендом + SQL.</p>
+      <button class="btn primary" onclick="alert('Это демо. В продакшене здесь откроется корзина.')">Открыть корзину</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Улучшенная Додо Пицца • Демо на HTML + CSS + JS + PHP + Go + SQL</p>
+      <p class="tech">Стек: HTML • CSS • JS • PHP • Go • SQL</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
